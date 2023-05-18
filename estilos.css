@@ -115,7 +115,7 @@ textarea {
 
 .imagen-texto{
   position: absolute;
-  top: 135px;
+  top: 45px;
   left: 33px;
   display: flex;
   justify-content: center;
@@ -149,7 +149,7 @@ textarea {
   width: 276px;
   height: 50px;
   left: 96px;
-  top: 545px;
+  top: 497px;
   color: #0A3871;
   font-weight: 600;
   font-size: medium;
