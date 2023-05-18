@@ -1,12 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="es">
+  <head>
     <title>Encriptador de texto</title>
-</head>
-<body>
-    
-</body>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <img src="/img/logo-alura.jpeg" class="logo-img" alt="logo-alura">
+      <h1 class="encabezado">Encriptador de Texto</h1>
+    </header>
+    <main class="container">
+      <section class="entradaTexto-Botones col-7">
+          <div class="form-group">
+            <textarea name="textInput" id="textInput" placeholder="Ingrese el texto a codificar aquí" required></textarea>
+            <div class="mensajeAdvertencia">
+              <i class="material-icons">error</i>
+              <p class="alerta">Solo letras minúsculas y sin acentos</p>
+            </div>
+          </div>
+          <div class="botones">
+            <button  name="encriptar" id="encriptar" class="btn btn-encriptar">Encriptar</button>
+            <button  name="desencriptar" id="desencriptar" class="btn btn-desencriptar">Desencriptar</button>
+          </div>
+      </section>
+      <section class="salidadTexto col-5">
+        <textarea name="textOutput" id="textOutput"></textarea>
+        <div class="imagen-texto">
+          <img class="img-busqueda" src="/img/Muñeco.png" alt="Imagen-busqueda">
+          <h6 class="notFound">Ningún mensaje fue encontrado</h6>
+          <p class="instructions">Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+        <div>
+          <button class="btn-copiar">Copiar</button>
+        </div>
+      </section>
+    </main>
+      <footer>
+        <img src="/img/logo-alura.jpeg" class="logo-img" alt="logo-alura">
+        <section class="creditos">
+          <h5 class="piePag">Challenge ONE</h5>
+          <h4 class="autor">Desarrollado por Alexander Rengifo Cardona</h4>
+        </section>
+        <div class="enlaces">
+          <h4 class="autor">Encuentrame en:</h4>
+          <a class="btnRedes" href="https://www.linkedin.com/in/alexrencar/" role="button" target="_blank">            
+            <img src="/img/icons8-linkedin-48.png" width="50px" alt="imagenLinkedIn">
+          </a>
+          <a class="btnRedes" href="https://github.com/AlexRencar" role="button"  target="_blank">
+            <img src="/img/github-mark-white.png" width="50px" alt="imagenGithub">
+          </a>
+        </div>
+      </footer>
+  </body>
 </html>

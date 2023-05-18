@@ -1,0 +1,190 @@
+*{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+}
+
+body{
+  padding: 0;
+  margin: o;
+  background-color: #F3F5FC !important;
+}
+
+header{
+  background-color: #113A6E;
+  display: flex !important;
+  align-items: center;
+}
+
+.logo-img{
+  width: 8%;
+}
+
+.encabezado{
+  width: 100%;
+  text-align: center;
+  color: azure;
+}
+
+.container{
+  padding: 2rem;
+  display: flex;
+  height: 100vh;
+}
+
+.entradaTexto-Botones{
+  padding: 1rem 2rem 1rem;
+  background-color: transparent;
+}
+
+.form-group{
+  height: 83%;
+}
+
+.mensajeAdvertencia{
+  display: flex !important;
+}
+
+textarea {
+  resize: none !important;
+}
+
+#textInput{
+  width: 100%;
+  height: 95%;
+  background-color: transparent;
+  border: none;
+  text-transform: lowercase;
+}
+::placeholder {
+  color: #0A3871;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+#textInput:focus{
+  outline: none;
+}
+
+.botones{
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn{
+  padding: 0;
+  margin-right: 1em;  
+  width: 680px;
+  height: 50px;
+}
+
+#encriptar{
+  background-color: #0A3871;
+  color: white;
+  font-size: medium;
+  font-weight: 700;  
+  border-radius: 24px;
+}
+
+#desencriptar{
+  background-color: #D8DFE8;
+  color: #0A3871;
+  font-size: medium;
+  font-weight: 700;
+  border-radius: 24px;
+  border: 1px solid #0A3871;
+}
+
+.salidadTexto{
+  padding: 1rem 2rem 1rem;
+  background-color: white; 
+  border-radius: 24px;
+}
+
+#textOutput{
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  color: #0A3871;
+}
+#textOutput:focus{
+  outline: none;
+}
+
+.imagen-texto{
+  position: absolute;
+  top: 135px;
+  left: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.notFound{
+  font-weight: 700;
+  font-size: larger;
+  line-height: 120%;
+  text-align: center;
+  width: 70%;
+  margin: 1rem auto;
+}
+
+.instructions{
+  font-weight: 400;
+  font-size: medium;
+  line-height: 150%;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.btn-copiar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  width: 276px;
+  height: 50px;
+  left: 96px;
+  top: 545px;
+  color: #0A3871;
+  font-weight: 600;
+  font-size: medium;
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+  justify-content: center;
+}
+
+footer{
+  background-color: #113A6E;
+  display: flex !important;
+  align-items: center;
+}
+
+.creditos{
+  padding-left: 2rem;
+}
+
+.piePag{
+  width: 100%;
+  text-align: left;
+  color: azure;
+}
+
+.enlaces{
+  display: inline-block;
+  padding-left: 4rem;
+}
+
+.autor{
+  width: 100%;
+  text-align: left;
+  color: azure;
+}
+
+.btnRedes{
+  width: 50px;
+}
