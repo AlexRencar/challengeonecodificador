@@ -64,12 +64,11 @@ function desencriptar(stringDesencriptado){
 }
 
 function limpiar() {
-    document.getElementById("muneco").style.display = "initial";
-    document.getElementById("ningun_msn").style.display = "initial";
+    document.getElementById("imagen-texto").style.display = "initial";
     document.getElementById("btn_copiar").style.display = "none";
     mensaje.value = "";
-    text_area.value = "";
-    text_area.focus();
+    textArea.value = "";
+    textArea.focus();
 }
 
 var textoCopiado;
