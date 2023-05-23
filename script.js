@@ -62,14 +62,6 @@ function desencriptar(stringDesencriptado){
     }
 }
 
-function limpiar() {
-    document.getElementById("imagen-texto").style.display = "initial";
-    document.getElementById("btn_copiar").style.display = "none";
-    mensaje.value = "";
-    textArea.value = "";
-    textArea.focus();
-}
-
 var textoCopiado;
 
 function copiar() {
@@ -86,4 +78,3 @@ function copiar() {
 
 
 botonCopiar.onclick = copiar;
-limpiar();
