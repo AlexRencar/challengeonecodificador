@@ -22,9 +22,10 @@ function encriptar(stringEncriptado){
     let check = /[^a-z 0-9]/.test(stringEncriptado);
     if (check) {
         swal("Oops", "El texto no debe contener mayusculas o simbolos especiales", "warning");
-
+        limpiar();
     } else if (stringEncriptado.trim() === "") {
         swal("Ohh", "Debe agregar el texto a Encriptar", "warning");
+        limpiar();
     } else{
         let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
 
