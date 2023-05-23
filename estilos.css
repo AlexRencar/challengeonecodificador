@@ -14,6 +14,7 @@ header{
   background-color: #113A6E;
   display: flex !important;
   align-items: center;
+  padding: 1rem;
 }
 
 .logo-img{
@@ -24,12 +25,13 @@ header{
   width: 100%;
   text-align: center;
   color: azure;
+  font-size: xx-large;
 }
 
 .container{
   padding: 2rem;
   display: flex;
-  height: 100vh;
+  height: 44.6rem;
 }
 
 .entradaTexto-Botones{
@@ -49,20 +51,20 @@ textarea {
   resize: none !important;
 }
 
-#textInput{
+.textInput{
   width: 100%;
   height: 95%;
   background-color: transparent;
   border: none;
-  text-transform: lowercase;
 }
+
 ::placeholder {
   color: #0A3871;
   font-size: 1.5em;
   font-weight: 600;
 }
 
-#textInput:focus{
+.textInput:focus{
   outline: none;
 }
 
@@ -100,6 +102,7 @@ textarea {
   padding: 1rem 2rem 1rem;
   background-color: white; 
   border-radius: 24px;
+  position: relative;
 }
 
 #textOutput{
@@ -141,21 +144,24 @@ textarea {
   text-align: center;
 }
 
-.btn-copiar{
+.btnContainer{
+  position: absolute;
+  top: 545px;
+  left: 97px;
+}
+
+#btn-copiar{
   display: flex;
   flex-direction: row;
   align-items: center;
-  position: absolute;
   width: 276px;
   height: 50px;
-  left: 96px;
-  top: 497px;
   color: #0A3871;
   font-weight: 600;
   font-size: medium;
   border: 1px solid #0A3871;
   border-radius: 24px;
-  justify-content: center;
+  justify-content: center; 
 }
 
 footer{
@@ -165,7 +171,7 @@ footer{
 }
 
 .creditos{
-  padding-left: 2rem;
+  padding-left: 10%;
 }
 
 .piePag{
@@ -176,15 +182,106 @@ footer{
 
 .enlaces{
   display: inline-block;
-  padding-left: 4rem;
+  padding-left: 10%;
 }
 
 .autor{
   width: 100%;
   text-align: left;
   color: azure;
+  font-size: larger;
 }
 
 .btnRedes{
   width: 50px;
+}
+
+/*
+Aqui empieza los estilos resposivos
+*/
+
+@media screen and (max-width: 1200px) {
+  .btnContainer {
+    left: 58px;
+  }
+
+  .imagen-texto {
+    top: 130px;
+    left: 8px;
+  }
+
+  .img-busqueda{
+    width: 80%;
+  }
+
+  #btn-copiar{
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container{
+    flex-direction: column;
+    height: 90rem;
+  }
+
+  .entradaTexto-Botones{
+    height: 50%;
+    padding-bottom: 4rem;
+  }
+
+  .salidadTexto{
+    height: 50%;
+  }
+
+  .imagen-texto {
+    top: 15%;
+    left: 13%;
+  }
+
+  .btnContainer {
+    left: 28%;
+    top: 82%;
+  }
+
+  #btn-copiar {
+    width: 250px;
+  }
+
+  footer{
+    padding: 1rem;
+  }
+
+  .enlaces{
+    padding-left: 5%;
+  }
+  
+  .creditos{
+    padding-left: 5%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .btnContainer {
+    left: 22%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container{
+    height: 60rem;
+  }
+
+  .imagen-texto {
+    left: 0%;
+    top: 5%;
+  }
+
+  .img-busqueda {
+    width: 60%;
+  }
+
+  .btnContainer {
+    left: 16%;
+  }
 }
